@@ -14,13 +14,13 @@
 
 
 An SQL query is a statement built by putting together various SQL commands. These SQL commands together perform a specific task to access, manage, modify, update, control, and organize your data stored in a database and managed via a DBMS
-In this project severael SQL queries has been initiated to retrieve tha data from the data database  which is creating on a [Dataset](https://www.kaggle.com/datasets/guillemservera/forbes-billionaires-1997-2023)
+In this project several SQL queries has been initiated to retrieve tha data from the data database  which is creating on a [Dataset](https://www.kaggle.com/datasets/guillemservera/forbes-billionaires-1997-2023)
 
 > [See data visualization here](https://public.tableau.com/app/profile/ihtisham.mehmood/viz/Forbes-billionaires1997-2023/Story1)
 
 ## Detecting outliers with(IQR)
 
-IQR is  one of the common and effective tecniques to identify the outlier and to cap and remove the outlier so to reduce the skewness of data. Outliers deeply effect the overall population when mean is takken 
+IQR is  one of the common and effective techniques to identify the outlier and to cap and remove the outlier so to reduce the skewness of data. Outliers deeply effect the overall population when mean is taken 
 
 ``````sql
 select 
@@ -55,7 +55,7 @@ In this query the IQR formula has put to a use which is a follows:
 
 ## How has net worth changed over the years?
 
-To answer this question the folliwng query has been used:
+To answer this question the following query has been used:
 
 ``````sql
 select top 5
@@ -67,8 +67,8 @@ group by year,full_name
 order by average_net_worth desc
 ``````
 
-In this query the avarge of Networth is taken it is grouped by year to check the change at invidual year. I have excluded that outliers from the data set
-to get more sacalable results
+In this query the average of Net worth is taken it is grouped by year to check the change at individual year. I have excluded that outliers from the data set
+to get more scalable results
 
 > Resulting when outliers are included are as follows:
 
@@ -92,7 +92,7 @@ year | full_name | average_net_worth(BN)
 2021 | Jeff Bezos | 177
 2022 | Jeff Bezos | 171
 
-By looking at this change we clearly see that oultier has significant impact on the data set and impact on our analysis
+By looking at this change we clearly see that outlier has significant impact on the data set and impact on our analysis
 
 ## Are there any trends in terms of business industries that tend to have more self-made individuals?
 
@@ -180,7 +180,7 @@ Male | 40-49 | 2.19327782290821
 Female | 50+ | 2.68313253012049
 Male | 50+ | 2.5268571585419
 
-This table gives a good summary about the age group and within particular age group we can see average networth(BN)
+This table gives a good summary about the age group and within particular age group we can see average net worth(BN)
 
 ``````sql
 select 
@@ -200,7 +200,7 @@ order by age_group,gender
 ``````
 
 This query is explaining its self.
-Different age group is being created with the case statement and and gouping the result
+Different age group is being created with the case statement and and grouping the result
 
 - The inner subquery starts by selecting two columns: "gender" and a derived column "age_group." The "age_group" column is calculated based on the "age" column's values using a CASE statement. It categorizes individuals into different age groups: '18-29' for ages 18 to 29, '30-39' for ages 30 to 39, '40-49' for ages 40 to 49, and '50+' for ages 50 and above. It also selects the "net_worth" column.
 

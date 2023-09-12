@@ -42,7 +42,7 @@ The query retrieves data from the dataset  to show how many films were entered i
 This query analyzes the dataset [The oscars] to find award winners who have won in multiple categories or films. It calculates the distinct counts of categories and films for each winner, focusing on rows where "winner" is 1.
 
 ``````sql
-select name, count(distinct category) as distinct_catagory_count, 
+select name, count(distinct category) as distinct_category_count, 
 count(distinct film) as distinct_film_count
 from  [The oscars]
 where winner =1

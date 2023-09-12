@@ -1,6 +1,6 @@
 # Contents
 
-[1-min max caluclation](#min-max-caluclation)\
+[1-min max calculation](#min-max-calculation)\
 [2-Trend identification](#trend-identification)\
 [3-stock price vs the divided](#stock-price-vs-the-divided)\
 [4-impact of stock split](#impact-of-stock-split)\
@@ -12,7 +12,7 @@
 This process involves querying the data, examining its structure, and summarizing its characteristics to gain a deeper understanding of its patterns and trends using SQL Server.
  > [See data visualization here](https://public.tableau.com/app/profile/ihtisham.mehmood/viz/InsightsintoApplestockprice/Dashboard1)
 
-## min max caluclation
+## min max calculation
 
 This SQL query retrieves summary statistics for the 'close_price' column of the 'Apple' table. It calculates the minimum, maximum, and average values of the 'close_price'.
 
