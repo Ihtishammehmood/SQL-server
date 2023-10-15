@@ -26,6 +26,7 @@
 
 In utilizing SQL Server for data analysis on a dataset pertaining to heart rate risk, a comprehensive examination of the dataset was conducted to extract valuable insights and patterns related to heart rate and associated risks. SQL queries were employed to aggregate and summarize heart rate data, calculate averages, standard deviations, and other relevant statistical metrics. Additionally, filtering and grouping functions in SQL were used to categorize heart rate data based on predefined risk levels, facilitating a thorough analysis of how heart rate correlates with varying risk factors. This approach allowed for a deeper understanding of the dataset, enabling the identification of potential correlations between heart rate, risk factors, and the overall assessment of cardiovascular health. The insights gained from this analysis can be instrumental in formulating strategies for risk mitigation, personalized healthcare plans, or research initiatives focused on improving heart health.
 
+**[Click here to access Article](https://www.linkedin.com/posts/ihtishammehmood_predictiveanalytics-descriptiveanalytics-activity-7116823766046785536-ZMjZ?utm_source=share&utm_medium=member_desktop)**
 >[Data Source](httpswww.kaggle.comdatasetsiamsouravbanerjeeheart-attack-prediction-dataset)
 
 > [Click here to see visualization](https://public.tableau.com/app/profile/ihtisham.mehmood/viz/HeartAttackRiskDashboard_16964318022960/Dashboard1)
